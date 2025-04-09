@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javaScript</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    
+    }
+
+  .page{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+  }
+
+  .switch{
+    display: grid;;
+    grid-template-columns: 60%;
+    gap: 280px;
+  }
+
+  #slider{
+    width: 200px;
+    animation: move 3s infinite;
+  }
+
+  @keyframes move {
+
+0%{
+  transform: scale(1);
+
+}
+50% {
+
+  transform: scale(1.1);
+  
+}
+
+
+100%{
+
+  transform: scale(1);
+  
+
+}
+
+}
+
+
+.switch button{
+  background-image: linear-gradient(to right , orange, rgba(165, 42, 42, 0.589) );
+  border-radius: 10%;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.1s;
+}
+
+button:hover{
+  background-image: linear-gradient(to right , orange, rgba(165, 42, 42, 0.979) );
+
+}
+
+button:active{
+  color: white;
+}
+
+
+
+
+
+  </style>
+
+
+
+
+</head>
+<body>
+
+
+
+  <div class="page">
+    <div class="switch"> 
+      
+      <div class="a">
+      <button id="buttona">Turn On</button> 
+     </div>
+
+     <div class="b">
+      <button id="buttonb">Turn Off</button>
+    </div>
+
+    </div>
+
+    
+
+
+  <div id="bulb">
+   <img id="slider" src="pic_bulboff.gif"  alt="">
+  </div>
+
+</div>
+
+
+
+
+
+
+    <script src="./script.js"> </script>
+    <script src = "./controlFlow.js"> </script>
+    <script  src =  "./bulb.js" type="module">  </script>
+</body>
+</html>
